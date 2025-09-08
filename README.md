@@ -1,7 +1,7 @@
 ## 📂 Project Structure
 
 ```text
-Tomato/
+OnlineFoodOrderingSystem/
 │
 ├── factories/                   # Factory Design Pattern (order creation)
 │   ├── Noworderfactory.java
