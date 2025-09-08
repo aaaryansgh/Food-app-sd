@@ -1,29 +1,35 @@
-## OnlineFoodOrderingSystem/
-```─ Main.java```                    # Composition root and entry point
-├── TomatoApp.java                # Facade class (main orcjavaestrator)
+## 📂 Project Structure
+
+```text
+Tomato/
 │
-├── models/
-│   ├── MenuItem.java
-│   ├── Restaurant.java
-│   ├── User.java
+├── factories/                   # Factory Design Pattern (order creation)
+│   ├── Noworderfactory.java
+│   ├── Orderfactory.java
+│   └── Scheduleorderfactory.java
+│
+├── managers/                    # Managers for handling business logic
+│   ├── Ordermanager.java
+│   └── Resturantmanager.java
+│
+├── models/                      # Core domain models
 │   ├── Cart.java
-│   ├── Order.java                # Abstract Order
-│   ├── DeliveryOrder.java
-│   ├── PickupOrder.java
+│   ├── Deliveryorder.java
+│   ├── MenuItem.java
+│   ├── Order.java
+│   ├── Pickuporder.java
+│   ├── Resturant.java
+│   └── User.java
 │
-├── managers/
-│   ├── RestaurantManager.java
-│   ├── OrderManager.java
+├── services/                    # Services for notifications, etc.
+│   └── Notification.java
 │
-├── strategies/
-│   ├── PaymentStrategy.java      # Base class
-│   ├── CreditCardPaymentStrategy.java
-│   ├── UpiPaymentStrategy.java
+├── strategies/                  # Strategy Design Pattern (payment methods)
+│   ├── Card.java
+│   ├── Paymentstrategy.java
+│   └── Upipayment.java
 │
-├── factories/
-│   ├── OrderFactory.java         # Abstract factory
-│   ├── NowOrderFactory.java
-│   ├── ScheduledOrderFactory.java
+├── utils/                       # Utility/helper classes
 │
-├── services/
-│   └── NotificationService.java
+├── Main.java                    # Entry point
+└── TomatoApp.java               # Facade/Orchestrator
