@@ -1,6 +1,5 @@
-OnlineFoodOrderingSystem/
-│
-├── Main.java                    # Composition root and entry point
+## OnlineFoodOrderingSystem/
+```─ Main.java```                    # Composition root and entry point
 ├── TomatoApp.java                # Facade class (main orcjavaestrator)
 │
 ├── models/
